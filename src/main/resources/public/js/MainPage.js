@@ -64,7 +64,7 @@ function viewAllItems(today, with_photo, mark_id, active, only_my) {
                             "<td>" + items[i].bodyType.description + "</td>" +
                             "<td>" + items[i].year + "</td>" +
                             "<td>" + items[i].price + "</td>" +
-                            "<td>" + DateFormat.format.date(new Date(items[i].created), 'dd/MM/yyyy HH:mm"ss') + "</td>" +
+                            "<td>" + DateFormat.format.date(new Date(items[i].created), 'dd/MM/yyyy HH:mm:ss') + "</td>" +
                             "<td>" +
                             "<input type='checkbox' value='" + items[i].id + "'" + check + "onchange='setState(this.value, this.checked);'" + "/>" +
                             "</td>" +
