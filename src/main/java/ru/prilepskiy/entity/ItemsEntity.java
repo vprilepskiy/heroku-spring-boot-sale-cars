@@ -104,8 +104,7 @@ public class ItemsEntity implements Serializable {
     }
 
     @Basic
-    @Type(type = "org.hibernate.type.MaterializedBlobType")
-    @Column(name = "photo", length = 1024 * 1024 * 10)
+    @Column(name = "photo")
     public byte[] getPhoto() {
         return photo;
     }
