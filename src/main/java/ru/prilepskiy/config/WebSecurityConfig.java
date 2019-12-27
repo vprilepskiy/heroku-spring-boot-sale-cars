@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers("/auth/**").permitAll()
             .antMatchers("/api/*.skip").permitAll()
             // пропустить
-//            .antMatchers("/api/**").permitAll() //временно
+            .antMatchers("/**").permitAll() //временно
             // все пользователи должны быть авторизованы
             .anyRequest().authenticated()
             .and()
